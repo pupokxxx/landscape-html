@@ -28,6 +28,26 @@ body {
   font-size: 14pt;
   font-weight: bold;
 }
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+  font-family: inherit;
+  font-size: 46pt;
+  font-weight: bold;
+  color: #c6c6c6;
+  line-height: 0;
+}
+.slick-slider .slick-prev:before {
+  content: "‹";
+}
+.slick-slider .slick-next:before {
+  content: "›";
+}
+.slick-slider .slick-prev:hover,
+.slick-slider .slick-prev:focus,
+.slick-slider .slick-next:hover,
+.slick-slider .slick-next:focus {
+  opacity: 1.0;
+}
 /*----header----*/
 .navbar-nav .nav-item {
   border-right: #fff 1px solid;
@@ -61,7 +81,7 @@ body {
   color: #ffffff;
   font-family: 'Proxima Nova Cn Rg';
   text-transform: uppercase;
-  font-size: 12pt;
+  font-size: 17pt;
 }
 .navbar_phone a:hover {
   text-decoration: none;
@@ -69,7 +89,6 @@ body {
 }
 .bg_top {
   background: url(../img/bg_top.png);
-  background-size: 100%;
   min-height: 50em;
 }
 .bg_top .header_box-shadow {
@@ -136,7 +155,7 @@ body {
   color: #ffffff;
   font-family: 'Proxima Nova Cn Rg';
   text-transform: none;
-  font-size: 12pt;
+  font-size: 14pt;
   background: none;
   padding: 0.5em;
   width: 14em;
@@ -161,14 +180,14 @@ body {
   color: #231f20;
   font-family: 'Proxima Nova Cn Rg';
   text-transform: uppercase;
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: bold;
 }
 .bg_top .header_row-nav .row_nav-button a {
   color: #ffffff;
   font-family: 'Proxima Nova Cn Rg';
   text-transform: none;
-  font-size: 12pt;
+  font-size: 16pt;
   text-decoration: underline;
 }
 .menu_sticky {
@@ -206,7 +225,7 @@ main .working_area h4 {
   color: #414042;
   font-family: 'Proxima Nova Cn Rg';
   text-transform: uppercase;
-  font-size: 20pt;
+  font-size: 24pt;
   font-weight: bold;
 }
 main .row_oboutcompany {
@@ -223,27 +242,8 @@ main .row_oboutcompany h4 {
   color: #414042;
   font-family: 'Proxima Nova Cn Rg';
   text-transform: uppercase;
-  font-size: 20pt;
+  font-size: 24pt;
   font-weight: bold;
-}
-main .row_oboutcompany .aboutcompany_flower-carusel .slick-prev:before,
-main .row_oboutcompany .aboutcompany_flower-carusel .slick-next:before {
-  background: url(../img/left.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: inherit;
-}
-main .row_oboutcompany .aboutcompany_flower-carusel .slick-next:before {
-  background: url(../img/right.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: inherit;
-}
-main .row_oboutcompany .aboutcompany_flower-carusel .slick-prev:hover,
-main .row_oboutcompany .aboutcompany_flower-carusel .slick-prev:focus,
-main .row_oboutcompany .aboutcompany_flower-carusel .slick-next:hover,
-main .row_oboutcompany .aboutcompany_flower-carusel .slick-next:focus {
-  opacity: 1.0;
 }
 main .row_portfolio {
   margin: 4em auto;
@@ -370,12 +370,12 @@ main .row_complex-slide .slick-slide figcaption {
   font-size: 14pt;
 }
 main .row_complex-slide .slick-slide figcaption h4 {
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: bold;
   text-transform: uppercase;
 }
 main .row_complex-slide .slick-slide figcaption p {
-  font-size: 10pt;
+  font-size: 12pt;
 }
 main .row_landscape-project {
   margin-top: 4em;
@@ -446,6 +446,76 @@ main .row_contact .row_cintact-block .navbar_icon-soc a {
 main .row_contact .row_cintact-block .last_phone {
   font-size: 1.688em;
 }
+/*-------project_page-----*/
+.project_page .bg_top {
+  min-height: 9em;
+  background: #fff;
+}
+.project_page .bg_top .header_box-shadow {
+  min-height: 9em;
+  z-index: 1000;
+  background-color: inherit;
+}
+.project_page .bg_top .header_box-shadow .nav-item {
+  border-right: #000 1px solid;
+  border-image: none;
+}
+.project_page .bg_top .header_box-shadow .nav-link {
+  color: #000;
+}
+.project_page .bg_top .header_box-shadow .navbar_icon-soc img {
+  height: 1.1em;
+}
+.project_page .bg_top .header_box-shadow .navbar_icon-soc > div:last-child {
+  border-right: #000 1px solid;
+}
+.project_page main {
+  font-family: 'Proxima Nova Cn Rg';
+}
+.project_page main .project_slider .carousel {
+  z-index: 10;
+}
+.project_page main .project_slider .carousel-control-prev-icon {
+  background-image: url(../img/project_sl.png);
+}
+.project_page main .project_slider .carousel-control-next-icon {
+  background-image: url(../img/project_sr.png);
+}
+.project_page main .project_slider .carousel-control-prev-icon:hover {
+  background-image: url(../img/project_slh.png);
+}
+.project_page main .project_slider .carousel-control-next-icon:hover {
+  background-image: url(../img/project_srh.png);
+}
+.project_page main .project_slider .carousel-control-next-icon,
+.project_page main .project_slider .carousel-control-prev-icon {
+  width: 33px;
+  height: 62px;
+}
+.project_page main .project_slider .box_name-project {
+  height: 100%;
+}
+.project_page main .project_slider .working_area {
+  height: inherit;
+  z-index: 12;
+  top: 0;
+}
+.project_page main .project_slider .working_area .name-project {
+  height: inherit;
+  background: rgba(0, 0, 0, 0.3);
+}
+.project_page main .project_slider .working_area .name-project h4 {
+  border-left: #fff 3px solid;
+}
+.project_page main .row_info .row_info-data:first-child {
+  border-left: #8fbf21 3px solid;
+}
+.project_page main .row_other-project figcaption {
+  font-size: 12pt;
+}
+.project_page footer {
+  bottom: 0;
+}
 /*-------footer-----*/
 footer {
   background: url(../img/footer_bg.png) 100% 100% no-repeat;
@@ -485,11 +555,11 @@ footer .footer_box-shadow .working_area .footer_right .footer_nav .navbar_icon-s
 footer .footer_box-shadow .working_area .footer_right .footer_nav .icon_soc-houzz {
   border: none;
 }
-@media (max-device-width: 1366px) and (min-device-width: 320px) {
+@media (max-width: 1366px) and (min-width: 320px) {
   .navbar-toggler {
     background-color: rgba(139, 195, 74, 0.47) !important;
   }
-  .navbar-toggler .navbar-toggler-icon {
+  .navbar-toggler-icon {
     background: url(../img/menu.png);
     background-size: cover;
   }
@@ -497,7 +567,7 @@ footer .footer_box-shadow .working_area .footer_right .footer_nav .icon_soc-houz
     font-size: 1.6em;
     margin: 0;
   }
-  .bg_top .header_row-nav h4 {
+  .header_row-nav h4 {
     font-size: 1.2em;
   }
 }
