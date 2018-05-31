@@ -272,6 +272,7 @@ main .row_portfolio .portfolio_img-shadow img {
 main .row_portfolio .portfolio_img-shadow.portfolio_img-left h4 {
   height: max-content;
   position: absolute;
+  display: inline-table;
   letter-spacing: 0.5em;
   left: 4em;
   top: 3em;
